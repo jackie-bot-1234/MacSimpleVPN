@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D3BA5922EE1BF58003A5961 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3BA5912EE1BF58003A5961 /* NetworkExtension.framework */; };
+		6D3BA59A2EE1BF58003A5961 /* network-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6D3BA58F2EE1BF58003A5961 /* network-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D3BA5A62EE1C0A9003A5961 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D3BA5A52EE1C0A9003A5961 /* WireGuardKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D3BA56F2EE1BF40003A5961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3BA5582EE1BF3E003A5961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3BA55F2EE1BF3F003A5961;
+			remoteInfo = VPN;
+		};
+		6D3BA5792EE1BF40003A5961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3BA5582EE1BF3E003A5961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3BA55F2EE1BF3F003A5961;
+			remoteInfo = VPN;
+		};
+		6D3BA5982EE1BF58003A5961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3BA5582EE1BF3E003A5961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3BA58E2EE1BF58003A5961;
+			remoteInfo = "network-extension";
+		};
+		6D3BA5A72EE1C0CE003A5961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D3BA5582EE1BF3E003A5961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D3BA5A02EE1BFE2003A5961;
+			remoteInfo = WireguardGoBridgeMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D3BA59F2EE1BF58003A5961 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6D3BA59A2EE1BF58003A5961 /* network-extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D3BA5602EE1BF3F003A5961 /* VPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3BA56E2EE1BF40003A5961 /* VPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3BA5782EE1BF40003A5961 /* VPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3BA58F2EE1BF58003A5961 /* network-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "network-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3BA5912EE1BF58003A5961 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6D3BA59B2EE1BF58003A5961 /* Exceptions for "network-extension" folder in "network-extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6D3BA58E2EE1BF58003A5961 /* network-extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6D3BA5622EE1BF3F003A5961 /* VPN */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VPN;
+			sourceTree = "<group>";
+		};
+		6D3BA5712EE1BF40003A5961 /* VPNTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VPNTests;
+			sourceTree = "<group>";
+		};
+		6D3BA57B2EE1BF40003A5961 /* VPNUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VPNUITests;
+			sourceTree = "<group>";
+		};
+		6D3BA5932EE1BF58003A5961 /* network-extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6D3BA59B2EE1BF58003A5961 /* Exceptions for "network-extension" folder in "network-extension" target */,
+			);
+			path = "network-extension";
+			sourceTree = "<group>";
+		};
+		6D3BA5E02EE2CBF3003A5961 /* script */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = script;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D3BA55D2EE1BF3F003A5961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA56B2EE1BF40003A5961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA5752EE1BF40003A5961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA58C2EE1BF58003A5961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3BA5A62EE1C0A9003A5961 /* WireGuardKit in Frameworks */,
+				6D3BA5922EE1BF58003A5961 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D3BA5572EE1BF3E003A5961 = {
+			isa = PBXGroup;
+			children = (
+				6D3BA5E02EE2CBF3003A5961 /* script */,
+				6D3BA5622EE1BF3F003A5961 /* VPN */,
+				6D3BA5712EE1BF40003A5961 /* VPNTests */,
+				6D3BA57B2EE1BF40003A5961 /* VPNUITests */,
+				6D3BA5932EE1BF58003A5961 /* network-extension */,
+				6D3BA5902EE1BF58003A5961 /* Frameworks */,
+				6D3BA5612EE1BF3F003A5961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D3BA5612EE1BF3F003A5961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D3BA5602EE1BF3F003A5961 /* VPN.app */,
+				6D3BA56E2EE1BF40003A5961 /* VPNTests.xctest */,
+				6D3BA5782EE1BF40003A5961 /* VPNUITests.xctest */,
+				6D3BA58F2EE1BF58003A5961 /* network-extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D3BA5902EE1BF58003A5961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D3BA5912EE1BF58003A5961 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		6D3BA5A02EE1BFE2003A5961 /* WireguardGoBridgeMacOS */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 6D3BA5A12EE1BFE2003A5961 /* Build configuration list for PBXLegacyTarget "WireguardGoBridgeMacOS" */;
+			buildPhases = (
+			);
+			buildToolPath = "$(PROJECT_DIR)/script/build_wireguard_go_bridge.sh";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = WireguardGoBridgeMacOS;
+			packageProductDependencies = (
+			);
+			passBuildSettingsInEnvironment = 1;
+			productName = WireguardGoBridgeMacOS;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		6D3BA55F2EE1BF3F003A5961 /* VPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3BA5822EE1BF40003A5961 /* Build configuration list for PBXNativeTarget "VPN" */;
+			buildPhases = (
+				6D3BA55C2EE1BF3F003A5961 /* Sources */,
+				6D3BA55D2EE1BF3F003A5961 /* Frameworks */,
+				6D3BA55E2EE1BF3F003A5961 /* Resources */,
+				6D3BA59F2EE1BF58003A5961 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3BA5992EE1BF58003A5961 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6D3BA5622EE1BF3F003A5961 /* VPN */,
+				6D3BA5E02EE2CBF3003A5961 /* script */,
+			);
+			name = VPN;
+			packageProductDependencies = (
+			);
+			productName = VPN;
+			productReference = 6D3BA5602EE1BF3F003A5961 /* VPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D3BA56D2EE1BF40003A5961 /* VPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3BA5852EE1BF40003A5961 /* Build configuration list for PBXNativeTarget "VPNTests" */;
+			buildPhases = (
+				6D3BA56A2EE1BF40003A5961 /* Sources */,
+				6D3BA56B2EE1BF40003A5961 /* Frameworks */,
+				6D3BA56C2EE1BF40003A5961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3BA5702EE1BF40003A5961 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6D3BA5712EE1BF40003A5961 /* VPNTests */,
+			);
+			name = VPNTests;
+			packageProductDependencies = (
+			);
+			productName = VPNTests;
+			productReference = 6D3BA56E2EE1BF40003A5961 /* VPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D3BA5772EE1BF40003A5961 /* VPNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3BA5882EE1BF40003A5961 /* Build configuration list for PBXNativeTarget "VPNUITests" */;
+			buildPhases = (
+				6D3BA5742EE1BF40003A5961 /* Sources */,
+				6D3BA5752EE1BF40003A5961 /* Frameworks */,
+				6D3BA5762EE1BF40003A5961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3BA57A2EE1BF40003A5961 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6D3BA57B2EE1BF40003A5961 /* VPNUITests */,
+			);
+			name = VPNUITests;
+			packageProductDependencies = (
+			);
+			productName = VPNUITests;
+			productReference = 6D3BA5782EE1BF40003A5961 /* VPNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6D3BA58E2EE1BF58003A5961 /* network-extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D3BA59C2EE1BF58003A5961 /* Build configuration list for PBXNativeTarget "network-extension" */;
+			buildPhases = (
+				6D3BA58B2EE1BF58003A5961 /* Sources */,
+				6D3BA58C2EE1BF58003A5961 /* Frameworks */,
+				6D3BA58D2EE1BF58003A5961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D3BA5A82EE1C0CE003A5961 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6D3BA5932EE1BF58003A5961 /* network-extension */,
+			);
+			name = "network-extension";
+			packageProductDependencies = (
+				6D3BA5A52EE1C0A9003A5961 /* WireGuardKit */,
+			);
+			productName = "network-extension";
+			productReference = 6D3BA58F2EE1BF58003A5961 /* network-extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D3BA5582EE1BF3E003A5961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					6D3BA55F2EE1BF3F003A5961 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					6D3BA56D2EE1BF40003A5961 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 6D3BA55F2EE1BF3F003A5961;
+					};
+					6D3BA5772EE1BF40003A5961 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 6D3BA55F2EE1BF3F003A5961;
+					};
+					6D3BA58E2EE1BF58003A5961 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					6D3BA5A02EE1BFE2003A5961 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 6D3BA55B2EE1BF3E003A5961 /* Build configuration list for PBXProject "VPN" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D3BA5572EE1BF3E003A5961;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6D3BA5A42EE1C0A9003A5961 /* XCRemoteSwiftPackageReference "wireguard-apple" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6D3BA5612EE1BF3F003A5961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D3BA55F2EE1BF3F003A5961 /* VPN */,
+				6D3BA56D2EE1BF40003A5961 /* VPNTests */,
+				6D3BA5772EE1BF40003A5961 /* VPNUITests */,
+				6D3BA58E2EE1BF58003A5961 /* network-extension */,
+				6D3BA5A02EE1BFE2003A5961 /* WireguardGoBridgeMacOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D3BA55E2EE1BF3F003A5961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA56C2EE1BF40003A5961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA5762EE1BF40003A5961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA58D2EE1BF58003A5961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D3BA55C2EE1BF3F003A5961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA56A2EE1BF40003A5961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA5742EE1BF40003A5961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D3BA58B2EE1BF58003A5961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D3BA5702EE1BF40003A5961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3BA55F2EE1BF3F003A5961 /* VPN */;
+			targetProxy = 6D3BA56F2EE1BF40003A5961 /* PBXContainerItemProxy */;
+		};
+		6D3BA57A2EE1BF40003A5961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3BA55F2EE1BF3F003A5961 /* VPN */;
+			targetProxy = 6D3BA5792EE1BF40003A5961 /* PBXContainerItemProxy */;
+		};
+		6D3BA5992EE1BF58003A5961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3BA58E2EE1BF58003A5961 /* network-extension */;
+			targetProxy = 6D3BA5982EE1BF58003A5961 /* PBXContainerItemProxy */;
+		};
+		6D3BA5A82EE1C0CE003A5961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D3BA5A02EE1BFE2003A5961 /* WireguardGoBridgeMacOS */;
+			targetProxy = 6D3BA5A72EE1C0CE003A5961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D3BA5802EE1BF40003A5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D3BA5812EE1BF40003A5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5APR558U37;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6D3BA5832EE1BF40003A5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VPN/VPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.VPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D3BA5842EE1BF40003A5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VPN/VPN.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.VPN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6D3BA5862EE1BF40003A5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.VPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VPN";
+			};
+			name = Debug;
+		};
+		6D3BA5872EE1BF40003A5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.VPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VPN";
+			};
+			name = Release;
+		};
+		6D3BA5892EE1BF40003A5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.VPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VPN;
+			};
+			name = Debug;
+		};
+		6D3BA58A2EE1BF40003A5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jackie.VPNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = VPN;
+			};
+			name = Release;
+		};
+		6D3BA59D2EE1BF58003A5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "network-extension/network_extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "network-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "network-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jackie.VPN.network-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D3BA59E2EE1BF58003A5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "network-extension/network_extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "network-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "network-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jackie.VPN.network-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6D3BA5A22EE1BFE2003A5961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5APR558U37;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = /opt/homebrew/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D3BA5A32EE1BFE2003A5961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5APR558U37;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = /opt/homebrew/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D3BA55B2EE1BF3E003A5961 /* Build configuration list for PBXProject "VPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3BA5802EE1BF40003A5961 /* Debug */,
+				6D3BA5812EE1BF40003A5961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3BA5822EE1BF40003A5961 /* Build configuration list for PBXNativeTarget "VPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3BA5832EE1BF40003A5961 /* Debug */,
+				6D3BA5842EE1BF40003A5961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3BA5852EE1BF40003A5961 /* Build configuration list for PBXNativeTarget "VPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3BA5862EE1BF40003A5961 /* Debug */,
+				6D3BA5872EE1BF40003A5961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3BA5882EE1BF40003A5961 /* Build configuration list for PBXNativeTarget "VPNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3BA5892EE1BF40003A5961 /* Debug */,
+				6D3BA58A2EE1BF40003A5961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3BA59C2EE1BF58003A5961 /* Build configuration list for PBXNativeTarget "network-extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3BA59D2EE1BF58003A5961 /* Debug */,
+				6D3BA59E2EE1BF58003A5961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D3BA5A12EE1BFE2003A5961 /* Build configuration list for PBXLegacyTarget "WireguardGoBridgeMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D3BA5A22EE1BFE2003A5961 /* Debug */,
+				6D3BA5A32EE1BFE2003A5961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D3BA5A42EE1C0A9003A5961 /* XCRemoteSwiftPackageReference "wireguard-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ut360e/wireguard-apple.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D3BA5A52EE1C0A9003A5961 /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D3BA5A42EE1C0A9003A5961 /* XCRemoteSwiftPackageReference "wireguard-apple" */;
+			productName = WireGuardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6D3BA5582EE1BF3E003A5961 /* Project object */;
+}
