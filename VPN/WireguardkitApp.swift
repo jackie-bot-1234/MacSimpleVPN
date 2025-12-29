@@ -13,7 +13,7 @@ struct WireguardkitApp: App {
     
     // NOTE: This MUST exactly match the Network Extension target's Bundle ID.
     // Ensure the main app's Bundle ID is a prefix of this!
-    private let extensionBundleIdentifier = ""
+    private let extensionBundleIdentifier = "com.resistine.integrated.vpn.mac.network-extension" // REPLACE THIS
     
     var body: some Scene {
         WindowGroup {
@@ -53,16 +53,23 @@ struct WireguardkitApp: App {
             protocolConfiguration.serverAddress = "WireGuard Server"
             
             // --- WireGuard Configuration ---
+            // REPLACE THIS WITH YOUR CONFIGURATION
             let wgQuickConfig = """
-            
+            [Interface]
+            PrivateKey = 6EEkoU4NwuqikacmsPl96aTbPnry2MdUjVpf6dUa/VQ=
+            Address = 10.49.64.211/32
+            DNS = 10.49.11.10
+
+            [Peer]
+            PublicKey = T8sxu9+bCkDI3qiZ6VZ0Fgeeko2QeDCqC+AGTDGG4ho=
+            AllowedIPs = 10.49.0.0/17
+            Endpoint = 18.199.109.145:986
             """
             
             // 3. Log the specific configuration details
             NSLog("CONFIG INFO: Tunnel will be configured with:")
             NSLog("  > Provider Bundle ID: \(self.extensionBundleIdentifier)")
-            NSLog("  > Server Endpoint: 18.199.109.145:986")
-            NSLog("  > Client Address: 10.49.64.211/32")
-            NSLog("  > Tunnel Name: Resistine VPN Tunnel")
+            
 
             protocolConfiguration.providerConfiguration = [
                 "wgQuickConfig": wgQuickConfig
@@ -101,6 +108,16 @@ struct WireguardkitApp: App {
                             completionHandler(false)
                             return
                         }
+                        
+                        // START MONITORING STATUS CHANGES
+                        NotificationCenter.default.addObserver(forName: .NEVPNStatusDidChange, object: session, queue: .main) { notification in
+                            guard let session = notification.object as? NETunnelProviderSession else { return }
+                            let status = session.status
+                            NSLog("VPN STATUS CHANGE: \(status)")
+                            
+                        
+                        }
+                        
                         try session.startTunnel()
                         NSLog("SUCCESS [4. Start]: startTunnel called. Waiting for extension to execute...")
                     } catch {
