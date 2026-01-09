@@ -173,6 +173,34 @@ struct WireguardkitApp: App {
             }
         }
     }
+    
+    // MARK: - Check Tunnel Status
+    
+    func checkTunnelStatus(completionHandler: @escaping (Bool) -> Void) {
+        NETunnelProviderManager.loadAllFromPreferences { tunnelManagersInSettings, error in
+            if let error = error {
+                NSLog("ERROR [Check Status]: loadAllFromPreferences failed: \(error.localizedDescription)")
+                completionHandler(false)
+                return
+            }
+            
+            guard let tunnelManager = tunnelManagersInSettings?.first,
+                  let session = tunnelManager.connection as? NETunnelProviderSession else {
+                completionHandler(false)
+                return
+            }
+            
+            let status = session.status
+            NSLog("STATUS [Check Status]: Current status is \(status)")
+            
+            switch status {
+            case .connected, .connecting, .reasserting:
+                completionHandler(true)
+            default:
+                completionHandler(false)
+            }
+        }
+    }
 }
 
 // MARK: - Helper Extension for Logging
