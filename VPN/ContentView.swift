@@ -46,6 +46,18 @@ struct ContentView: View {
                         }
         }
         .padding()
+        .onAppear {
+            app.checkTunnelStatus { isConnected in
+                DispatchQueue.main.async {
+                    vpnStatusText = isConnected ? "Status: Connected" : "Status: Disconnected"
+                }
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("VPNStatusDidChange"))) { notification in
+            if let isConnected = notification.userInfo?["isConnected"] as? Bool {
+                vpnStatusText = isConnected ? "Status: Connected" : "Status: Disconnected"
+            }
+        }
     }
 }
 
