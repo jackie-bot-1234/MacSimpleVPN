@@ -9,12 +9,21 @@ import SwiftUI
 import NetworkExtension
 struct ContentView: View {
     var app: WireguardkitApp
+    @State private var vpnStatusText: String = "Status: Unknown"
 
     var body: some View {
         VStack {
+            Text(vpnStatusText)
+                .padding()
+            
             Button(action: {
                 app.turnOnTunnel { isSuccess in
                     print("Tunnel turned on: \(isSuccess)")
+                    app.checkTunnelStatus { isConnected in
+                        DispatchQueue.main.async {
+                            vpnStatusText = isConnected ? "Status: Connected" : "Status: Disconnected"
+                        }
+                    }
                 }
                         }) {
                             Text("Turn On Tunnel")
@@ -27,6 +36,7 @@ struct ContentView: View {
                         // Button to call turnOffTunnel
                         Button(action: {
                             app.turnOffTunnel()
+                            vpnStatusText = "Status: Disconnected"
                         }) {
                             Text("Turn Off Tunnel")
                                 .padding()
