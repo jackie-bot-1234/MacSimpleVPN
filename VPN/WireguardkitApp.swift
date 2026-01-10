@@ -64,14 +64,7 @@ struct WireguardkitApp: App {
             // REPLACE THIS WITH YOUR CONFIGURATION
             let wgQuickConfig = """
             [Interface]
-            PrivateKey = 6EEkoU4NwuqikacmsPl96aTbPnry2MdUjVpf6dUa/VQ=
-            Address = 10.49.64.211/32
-            DNS = 10.49.11.10
-
-            [Peer]
-            PublicKey = T8sxu9+bCkDI3qiZ6VZ0Fgeeko2QeDCqC+AGTDGG4ho=
-            AllowedIPs = 10.49.0.0/17
-            Endpoint = 18.199.109.145:986
+            
             """
             
             // 3. Log the specific configuration details
